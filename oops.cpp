@@ -2,15 +2,6 @@
 
 using namespace std;
 
-//Class
-//Objects
-//Encapsulation
-//Abstraction
-//Polymorphism
-//Inheritance
-//Dynamic Binding
-//Message Passing
-
 /*
  Class ----- 
  
@@ -98,6 +89,7 @@ class Poly{
 			cout<<"Sum :"<<a+b+c<<endl;
 		}
 //		Run Time Using Virtual Function
+//		Dynamic Binding
 		virtual void display(){
 			cout << "Called virtual Base Class function"<<endl;
 		}
@@ -105,7 +97,9 @@ class Poly{
 
 /*
 	Abstraction -----
+	Abstraction means displaying only essential information and hiding the detail.
 	
+	We can achieve it using Classes, Header Files.
 */
 
 class abst{
@@ -181,6 +175,7 @@ int main(){
 	par = &chi;
 	par->display();
 	
+//	Abstraction - Not allowed to access the variables a and b directly
 	abst a;
 	a.set(1,3);
 	a.show();
