@@ -1,6 +1,7 @@
 public class Oops{
     public static void main(String args[]){
         System.out.println("Amit");
+        Employee e = new Employee();
     }
 
 }
@@ -18,7 +19,7 @@ abstract class Abst{
 
 //Encapsulation using private modifier
 //Employee class contains private data called employee id and employee name
-public class Employee {
+class Employee {
     private int empid;
     private String ename;
     public void setEmpId(int id){
