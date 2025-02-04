@@ -1,0 +1,6 @@
+com\phonepe\battleShipGame\models\Ship.class
+com\phonepe\battleShipGame\services\BattleShipGameService.class
+com\phonepe\battleShipGame\models\Battlefield.class
+com\phonepe\battleShipGame\models\Player.class
+com\phonepe\battleShipGame\BattleShipGameApplication.class
+com\phonepe\battleShipGame\controllers\BattleShipGameController.class
