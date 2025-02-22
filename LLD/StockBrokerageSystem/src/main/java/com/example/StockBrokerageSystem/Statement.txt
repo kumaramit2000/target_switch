@@ -1,0 +1,109 @@
+
+***Requirements***
+
+1. The system allows users to create/manage their accounts.
+2. User should be able to Buy & Shell stocks.
+3. User can view their portfolio & transaction history.
+4. System should provide real time stock quotes & market data to user.
+5. System should handel order placement, execution & settlement process.
+6. The system should enforce various business rules and validations,
+   such as checking account balances and stock availability.
+7. The system should be able to generate reports for quarterly updates and yearly tax statements.
+8. Users should be able to deposit and withdraw money either via check, wire, or electronic bank transfer.
+9. The system should be able to send notifications whenever trade orders are executed.
+
+***Use Cases***
+
+Register new account/Cancel membership: To add a new member or cancel the membership of an existing member.
+Add/Remove/Edit watchlist: To add, remove or modify a watchlist.
+Search stock inventory: To search for stocks by their symbols.
+Place order: To place a buy or sell order on the stock exchange.
+Cancel order: Cancel an already placed order.
+Deposit/Withdraw money: Members can deposit or withdraw money via check, wire or electronic bank transfer.
+
+User :
+-> can create account
+-> can update account
+-> can login/logout
+-> can cancel membership
+
+-> can place order
+                  -> diff type of order places...
+                  -> search stock inventory
+
+-> can cancel order
+-> can create/update watchlist
+-> can add stock to watchlist
+-> can view stock positions
+
+-> can deposit money
+-> can withdraw money
+
+
+User should be able to Buy & Shell stocks.
+
+Market Order/Limit Order
+    -> Market price of every order... whatever is market price if we use it then its market order.
+    -> Buy/Stock a stock at particular price only... Limit Order... case hai ye
+
+Transaction with type NSE(National Stock Exchange)/BSE
+
+
+OrderManager
+
+placeOrder(userId,order);
+orderValidate(userId,order);
+
+
+OrderValidator
+
+validateOrder(userid,order);
+getUserInfo(userid);
+
+Order
+
+orderType
+quantity;
+price;
+status;
+List<transactions> transactions;
+
+StockBrockerSystem
+
+map<id,user> users;
+getuserinfo(id);
+
+
+User :
+
+funds
+portfolio
+watchlist
+
+OrderExecution :
+
+placeorder(userid,order);
+
+
+ExchangeConnector : {}
+
+geexchangeconnectorinstance(); //NSE,BSE
+placeordetoexchange();
+
+
+MarketData : //store all latest info of stocks...
+
+map<id,stock>
+
+Stock :
+
+name
+price
+exchange
+
+
+
+
+
+
+
