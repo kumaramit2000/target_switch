@@ -1,0 +1,31 @@
+Splitwise : Expense sharing application...
+
+1 User Management
+Users should be able to sign up and log in.
+Users should have a profile with a unique user ID, name, email, and phone number.
+Users can add and remove friends.
+
+2 Expense Management
+Users can add expenses involving one or more users.
+Expenses can be split equal, exact, and percentage. ***** Main Part *****
+Users can add comments and descriptions to expenses.
+Users can edit or delete an expense (only the creator).
+User should be able to see the expenses he is part of.
+
+3 Group Management
+Users can create, update, and delete groups.
+A group can have multiple users.
+Users in a group can add shared expenses.
+
+4 Balance Calculation
+The system should maintain a balance sheet for each user.
+It should calculate who owes whom and how much.
+It should simplify debts whenever possible (e.g., A owes B, B owes C → A can directly pay C).
+
+5 Payment Settlement
+Users can record a payment when they pay someone.
+Users should be able to view outstanding balances with other users.
+
+6 Notifications
+Users should receive notifications when someone adds them to an expense or a group.
+Notifications for settlements.
