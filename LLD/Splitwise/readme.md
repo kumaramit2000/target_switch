@@ -1,3 +1,2 @@
 
-
-ClassDiagram.jpg
+![Class Diagram](images/ClassDiagram.jpg)
