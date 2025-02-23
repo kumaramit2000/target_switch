@@ -12,13 +12,13 @@ The **Library Management System** is a software that manages books, members, lib
 ## 📌 Class Diagram
 Here is an overview of the **Library Management System** Class Diagram:
 
-![Class Diagram](images/ClassDiagram.png)
+![Class Diagram](images/ClassDiagram.jpg)
 
 ## 📌 Use Case Diagram
 Here is an overview of the **Library Management System** Use Case Diagram:
 
-![Use Case Diagram](images/UseCaseDiagram.png)
+![Use Case Diagram](images/UseCaseDiagram.jpg)
 
 ## 📌 OverAll
 
-![OverAll](images/OverAll.png)
+![OverAll](images/OverAll.jpg)
