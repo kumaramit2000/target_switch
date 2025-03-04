@@ -1,0 +1,48 @@
+Requirements Clarification:
+
+    A parking lot is an open-space building
+    It might have some number of floors.
+    Each floor has several spots.
+    Each floor has many entry/ exit points.
+    A spot can either be occupied or free.
+    The spots are divided into 3 types
+        - a spot for heavy-weight vehicles
+        - a spot for medium-weight vehicles
+        - a spot for light-weight vehicles
+    A parking lot will charge some amount for the duration the vehicle is parked.
+    The base charge will be different for each type of vehicle. There might be different strategies to calculate the charge.
+        - heavy weight:100 base charge up to 1 hr, then 100 extra for every hr
+        - medium weight: 50 base charge up to 1 hr, then 80 extra for every hr
+        - light-weight: 30 base charge up to 1 hr, then 50 extra for every hr
+    A ticket/ receipt will be generated for each vehicle parked
+    Payment should be done at the exit of the vehicle
+    Only that many vehicles can be parked until we have free slots.
+    Customers can pay via both cards and cards.
+    Bill Receipt will generated at the exit point.
+    There can be different strategies to get free/ available slot
+
+Find Entities (Class Diagram):
+
+Parking Lot
+    1. Parking Floors
+    2. Entry Panel
+    3. Exit Panel
+
+Parking Floor
+    1. Parking Spots
+    2. Display Board - Floor
+
+Parking Spot
+    1. Vehicle
+
+Gate
+    1.Type
+    assignSpot();
+    calculateAmount(ticket);
+
+Ticket
+    1. Vehicle
+    2. Spot
+    3. Entry Time
+
+
