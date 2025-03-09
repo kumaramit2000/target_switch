@@ -1,1 +1,2 @@
-useCaseDiagram.jpg
+
+![Use Case Diagram](images/useCaseDiagram.jpg)
