@@ -1,3 +1,3 @@
 
-![Use Case Diagram](useCaseDiagram.jpg)
+![Use Case Diagram](usc.svg)
 
